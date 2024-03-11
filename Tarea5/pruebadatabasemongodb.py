@@ -10,4 +10,6 @@ collection = db["test"]
 post = {"_id":0, "name": "Test1",  "age" :32}
 collection.insert_one(post)
 
+result = collection.delete_one({"_id":0})
 
+results = collection.update_one({})
